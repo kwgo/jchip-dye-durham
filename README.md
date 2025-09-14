@@ -90,19 +90,19 @@ Shelby Nathan Yoder
 ## **Docker CI/CD**
 
 ### Use an official OpenJDK image
-FROM openjdk:11-jdk
+FROM openjdk:11-jdk  
 
 ### Set working directory inside the container
-WORKDIR /app
+WORKDIR /app  
 
 ### Copy source code and test files into the container
-COPY src ./src
-COPY test ./test
-COPY lib ./lib
+COPY src ./src  
+COPY test ./test  
+COPY lib ./lib  
 
 ### Compile the Java code
-RUN mkdir bin
-RUN javac -d bin src/*.java
+RUN mkdir bin  
+RUN javac -d bin src/*.java  
 
 ### Default command to run TestNG tests
 CMD ["java", "-cp", "bin:lib/testng.jar", "org.testng.TestNG", "test/SortNamesInFileTest.java"]
