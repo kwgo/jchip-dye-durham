@@ -1,5 +1,4 @@
-# jchip-dye-durham
-
+jchip-dye-durham
 # **Sort Names In File (Dye & Durham Coding Assessment)**
 
 A Java program that **reads a list of names from a file, sorts them by last name**, and **writes the sorted list to a new file**. Handles **empty lines** and **single-word names**.  
