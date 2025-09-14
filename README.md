@@ -3,6 +3,21 @@ Sort Names In File (Dye & Durham Coding Assessment)
 
 A Java program that reads a list of names from a file, sorts them by last name, and writes the sorted list to a new file. Handles empty lines and single-word names.
 
+A Java program that **reads a list of names from a file, sorts them by last name**, and **writes the sorted list to a new file**.  
+Handles **empty lines** and **single-word names**.  
+
+---
+
+## **Features**
+- **Reads names from a text file** (one name per line)  
+- **Sorts names alphabetically by last name**  
+- **Handles names with no last name** (uses the first word)  
+- **Supports thousands of names efficiently**  
+- **Writes sorted names to a new file**  
+- **Ignores empty lines**  
+- **Includes TestNG test cases** for validation
+
+  
 Features
 
 Reads names from a text file (one name per line).
