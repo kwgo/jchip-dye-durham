@@ -1,10 +1,8 @@
 # jchip-dye-durham
-Sort Names In File (Dye & Durham Coding Assessment)
 
-A Java program that reads a list of names from a file, sorts them by last name, and writes the sorted list to a new file. Handles empty lines and single-word names.
+# **Sort Names In File (Dye & Durham Coding Assessment)**
 
-A Java program that **reads a list of names from a file, sorts them by last name**, and **writes the sorted list to a new file**.  
-Handles **empty lines** and **single-word names**.  
+A Java program that **reads a list of names from a file, sorts them by last name**, and **writes the sorted list to a new file**. Handles **empty lines** and **single-word names**.  
 
 ---
 
@@ -17,71 +15,45 @@ Handles **empty lines** and **single-word names**.
 - **Ignores empty lines**  
 - **Includes TestNG test cases** for validation
 
-  
-Features
+## **Getting Started**
 
-Reads names from a text file (one name per line).
+### **Prerequisites**
+- **Java 8 or higher**  
+- **Maven** or any IDE that supports Java (optional)  
+- **TestNG** (for running tests)  
 
-Sorts names alphabetically by last name.
-
-If a name has no last name, it is sorted using the first word.
-
-Supports thousands of names efficiently.
-
-Writes sorted names to a new file.
-
-Handles empty lines gracefully.
-
-Test cases provided with TestNG.
-
-Getting Started
-Prerequisites
-
-Java 8 or higher
-
-Maven or any IDE that supports Java (optional)
-
-TestNG (for running tests)
-
-File Structure
-project-root/
+### File Structure
+root/
 ├── src/
-│   ├── SortNamesInFile.java
-│   ├── unsorted-names-list.txt   # Input file
-│   └── sorted-names-list.txt     # Output file (created after running)
-└── test/
-    └── SortNamesInFileTest.java  # TestNG test cases
+│   ├── SortNamesInFile.java  
+│   ├── unsorted-names-list.txt   # Input file  
+│   └── sorted-names-list.txt     # Output file (created after running)  
+└── test/  
+    └── SortNamesInFileTest.java  # TestNG test cases  
 
-How to Run
+---
+## **How to Run**
 
-Compile
+### **Compile**
 
-javac -d bin src/SortNamesInFile.java
+**javac -d bin src/SortNamesInFile.java**
 
+### **Run**
 
-Run
+**java -cp bin SortNamesInFile**
 
-java -cp bin SortNamesInFile
+---
+## **Running Tests (TestNG)**
 
+**Make sure TestNG is in your classpath.**
 
-The program will read unsorted-names-list.txt from the src/ directory.
+**Compile the test class:**
 
-Sorted names will be written to sorted-names-list.txt.
+**javac -cp "path/to/testng.jar;bin" -d bin test/SortNamesInFileTest.java**
 
-The program prints the sorted names to the console as well.
+**Run tests:**
 
-Running Tests (TestNG)
-
-Make sure TestNG is in your classpath.
-
-Compile the test class:
-
-javac -cp "path/to/testng.jar;bin" -d bin test/SortNamesInFileTest.java
-
-
-Run tests:
-
-java -cp "path/to/testng.jar;bin" org.testng.TestNG test/SortNamesInFileTest.java
+**java -cp "path/to/testng.jar;bin" org.testng.TestNG test/SortNamesInFileTest.java**
 
 Example
 
@@ -106,14 +78,12 @@ London Lindsey
 Janet Parsons
 Shelby Nathan Yoder
 
-Notes
+---
+## **Notes**
 
-Works with large files efficiently.
+- **Works with large files efficiently.**
 
-Empty lines in the input file are ignored.
+- **Empty lines in the input file are ignored.**
 
-Names with a single word are sorted using that word.
+- **Names with a single word are sorted using that word.**
 
-License
-
-This project is open-source and free to use.
