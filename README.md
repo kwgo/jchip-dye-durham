@@ -23,7 +23,7 @@ A Java program that **reads a list of names from a file, sorts them by last name
 
 ### File Structure
 root/  
-├── src/
+├── src/  
 │   ├── SortNamesInFile.java  
 │   ├── unsorted-names-list.txt   # Input file  
 │   └── sorted-names-list.txt     # Output file (created after running)  
