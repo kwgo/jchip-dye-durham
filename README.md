@@ -55,8 +55,7 @@ jar cfm name-sorter.jar manifest.txt -C bin .
 
 java -jar name-sorter.jar ./unsorted-names-list.txt
 
-Now **name-sorter.jar** acts like a command-line tool:   
-name-sorter ./unsorted-names-list.txt   
+Now **name-sorter.jar** acts like a command-line tool.
 
 ---
 ## **Running Tests (TestNG)**
