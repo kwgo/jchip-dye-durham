@@ -43,15 +43,15 @@ java -cp bin SortNamesInFile
 
 **Make a Runnable JAR**
 
-**Create a manifest file manifest.txt:**
+**- Create a manifest file manifest.txt:**
 
 Main-Class: SortNamesInFile
 
-**Build the JAR:**
+**- Build the JAR:**
 
 jar cfm name-sorter.jar manifest.txt -C bin .
 
-**Run it like a CLI tool:**
+**- Run it like a CLI tool:**
 
 java -jar name-sorter.jar ./unsorted-names-list.txt
 
