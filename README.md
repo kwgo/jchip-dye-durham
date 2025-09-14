@@ -83,6 +83,8 @@ Shelby Nathan Yoder
 - **Works with large files efficiently.**
 
 - **Empty lines in the input file are ignored.**
+  
+- **Names with a single word are sorted using that word.**
 
 ---
 ## **Docker CI/CD**
@@ -105,5 +107,4 @@ RUN javac -d bin src/*.java
 ### Default command to run TestNG tests
 CMD ["java", "-cp", "bin:lib/testng.jar", "org.testng.TestNG", "test/SortNamesInFileTest.java"]
 
-- **Names with a single word are sorted using that word.**
 
