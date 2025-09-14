@@ -28,7 +28,7 @@ root/
 │   ├── unsorted-names-list.txt   # Input file  
 │   └── sorted-names-list.txt     # Output file (created after running)  
 └── test/  
-    └── SortNamesInFileTest.java  # TestNG test cases  
+\t    └── SortNamesInFileTest.java  # TestNG test cases  
 
 ---
 ## **How to Run**
