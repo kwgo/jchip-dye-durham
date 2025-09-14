@@ -33,13 +33,13 @@ root/
 ---
 ## **How to Run**
 
-### **Compile**
+**Compile**
 
-**javac -d bin src/SortNamesInFile.java**
+javac -d bin src/SortNamesInFile.java
 
-### **Run**
+**Run**
 
-**java -cp bin SortNamesInFile**
+java -cp bin SortNamesInFile
 
 ---
 ## **Running Tests (TestNG)**
