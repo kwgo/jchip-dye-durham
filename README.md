@@ -104,7 +104,10 @@ COPY lib ./lib
 RUN mkdir bin  
 RUN javac -d bin src/*.java  
 
-### Default command to run TestNG tests
-CMD ["java", "-cp", "bin:lib/testng.jar", "org.testng.TestNG", "test/SortNamesInFileTest.java"]
-
-
+### Run command
+name-sorter ./unsorted-names-list.txt   
+  
+docker run --rm \
+  -v $(pwd)/unsorted-names-list.txt:/app/unsorted-names-list.txt \
+  -v $(pwd)/output:/app/output \
+  name-sorter ./unsorted-names-list.txt
