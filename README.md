@@ -22,7 +22,7 @@ A Java program that **reads a list of names from a file, sorts them by last name
 - **TestNG** (for running tests)  
 
 ### File Structure
-root/
+root/  
 ├── src/
 │   ├── SortNamesInFile.java  
 │   ├── unsorted-names-list.txt   # Input file  
