@@ -45,39 +45,39 @@ root/
 ---
 ## **Running Tests (TestNG)**
 
-**Make sure TestNG is in your classpath.**
+Make sure TestNG is in your classpath.
 
 **Compile the test class:**
 
-**javac -cp "path/to/testng.jar;bin" -d bin test/SortNamesInFileTest.java**
+javac -cp "path/to/testng.jar;bin" -d bin test/SortNamesInFileTest.java
 
 **Run tests:**
 
-**java -cp "path/to/testng.jar;bin" org.testng.TestNG test/SortNamesInFileTest.java**
+java -cp "path/to/testng.jar;bin" org.testng.TestNG test/SortNamesInFileTest.java
 
-Example
+**Example**
+  
+Input (unsorted-names-list.txt)  
+  
+Janet Parsons  
+Vaughn Lewis  
+Adonis Julius Archer  
+Shelby Nathan Yoder  
+Marin Alvarez  
+London Lindsey  
+Beau Tristan Bentley  
+  
 
-Input (unsorted-names-list.txt)
-
-Janet Parsons
-Vaughn Lewis
-Adonis Julius Archer
-Shelby Nathan Yoder
-Marin Alvarez
-London Lindsey
-Beau Tristan Bentley
-
-
-Output (sorted-names-list.txt)
-
-Marin Alvarez
-Adonis Julius Archer
-Beau Tristan Bentley
-Vaughn Lewis
-London Lindsey
-Janet Parsons
-Shelby Nathan Yoder
-
+Output (sorted-names-list.txt)  
+  
+Marin Alvarez  
+Adonis Julius Archer  
+Beau Tristan Bentley  
+Vaughn Lewis  
+London Lindsey  
+Janet Parsons  
+Shelby Nathan Yoder  
+  
 ---
 ## **Notes**
 
