@@ -41,6 +41,23 @@ javac -d bin src/SortNamesInFile.java
 
 java -cp bin SortNamesInFile
 
+**Make a Runnable JAR**
+
+**Create a manifest file manifest.txt:**
+
+Main-Class: SortNamesInFile
+
+**Build the JAR:**
+
+jar cfm name-sorter.jar manifest.txt -C bin .
+
+**Run it like a CLI tool:**
+
+java -jar name-sorter.jar ./unsorted-names-list.txt
+
+Now **name-sorter.jar** acts like a command-line tool:   
+name-sorter ./unsorted-names-list.txt   
+
 ---
 ## **Running Tests (TestNG)**
 
