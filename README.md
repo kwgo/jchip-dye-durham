@@ -84,5 +84,26 @@ Shelby Nathan Yoder
 
 - **Empty lines in the input file are ignored.**
 
+---
+## **Docker CI/CD**
+
+### Use an official OpenJDK image
+FROM openjdk:11-jdk
+
+### Set working directory inside the container
+WORKDIR /app
+
+### Copy source code and test files into the container
+COPY src ./src
+COPY test ./test
+COPY lib ./lib
+
+### Compile the Java code
+RUN mkdir bin
+RUN javac -d bin src/*.java
+
+### Default command to run TestNG tests
+CMD ["java", "-cp", "bin:lib/testng.jar", "org.testng.TestNG", "test/SortNamesInFileTest.java"]
+
 - **Names with a single word are sorted using that word.**
 
